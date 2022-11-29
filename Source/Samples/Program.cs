@@ -77,3 +77,48 @@ object person = new Person("Chuck", "Norris");
 //LogicalPattern.CombinationSwitch('A');
 
 #endregion
+
+#region Parenthesized pattern
+
+//ParenthesizedPattern.Emphasize();
+
+//ParenthesizedPattern.NoPrecedenceChange('m');
+//ParenthesizedPattern.PrecedenceChange('m');
+
+#endregion
+
+
+#region Property pattern
+
+
+
+#endregion
+
+
+#region Positional pattern
+
+
+
+#endregion
+
+
+#region Var pattern
+
+
+
+#endregion
+
+
+#region Discard pattern
+
+
+
+#endregion
+
+
+#region List pattern
+
+
+
+#endregion
+
