@@ -41,6 +41,15 @@ internal static class DeclarationPattern
         }
     }
 
+    internal static void IsNullable()
+    {
+        int? i = 42;
+        if (i is int y)
+        {
+            Console.WriteLine("int? is underlaying int " + y);
+        }
+    }
+
     internal static void Boxing()
     {
         int? xNullable = 7;
@@ -50,6 +59,22 @@ internal static class DeclarationPattern
         {
             Console.WriteLine(a + b); 
         }
+    }
+
+    internal static void SwitchInheritance()
+    {
+        var numbers = new int[] { 10, 20, 30 };
+        Console.WriteLine(GetSourceLabel(numbers));  // output: 1
+
+        var letters = new List<char> { 'a', 'b', 'c', 'd' };
+        Console.WriteLine(GetSourceLabel(letters));  // output: 2
+
+        static int GetSourceLabel<T>(IEnumerable<T> source) => source switch
+        {
+            Array array => 1,
+            ICollection<T> collection => 2,
+            _ => 3,
+        };
     }
 
 }

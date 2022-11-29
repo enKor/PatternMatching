@@ -41,6 +41,15 @@ internal static class TypePattern
         }
     }
 
+    internal static void IsNullable()
+    {
+        int? i = 42;
+        if (i is int)
+        {
+            Console.WriteLine("int? is underlaying int");
+        }
+    }
+
     internal static void SwitchStatement(object obj)
     {
         switch (obj)
@@ -70,14 +79,21 @@ internal static class TypePattern
     {
         var message = obj switch
         {
-            Array array => "It's array of length " + array.Length, // <-- to be commented out
-            IReadOnlyList<int> list => "It implements IList of count " + list.Count,
             Person p => $"Name of the person: {p.FirstName} {p.LastName}",
             int i => $"Value of the int: {i}",
             double d => $"Value of the double: {d}",
-            _ => "obj is some other type"
+            _ => "obj is some other type" // discard
         };
 
         Console.WriteLine(message);
     }
+
+    internal static decimal RealSwitchInheritance(Vehicle vehicle) =>
+        vehicle switch
+        {
+            Car => 2.00m,
+            Truck => 7.50m,
+            null => throw new ArgumentNullException(nameof(vehicle)),
+            _ => throw new ArgumentException("Unknown type of a vehicle", nameof(vehicle)),
+        };
 }
