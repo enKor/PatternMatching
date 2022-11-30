@@ -87,15 +87,28 @@ object person = new Person("Chuck", "Norris");
 
 #endregion
 
-
 #region Property pattern
 
+//PropertyPattern.IsChristmasHoliday(new DateTime(2022, 12, 24));
+//PropertyPattern.IsChristmasHoliday(new DateTime(2022, 12, 20));
+
+//PropertyPattern.WriteFive("Hi!");
+//PropertyPattern.WriteFive("Hello, world!");
+//PropertyPattern.WriteFive(new[] { '1', '2', '3', '4', '5', '6', '7' });
+//PropertyPattern.WriteFive(new[] { 'a', 'b', 'c' });
+
+//PropertyPattern.Nested(new Segment(new(1, 0), new(0, 1)));
+//PropertyPattern.Nested(new Segment(new(1, 7), new(5, 1)));
+
+//PropertyPattern.Extended(new Segment(new(1, 0), new(0, 1)));
+//PropertyPattern.Extended(new Segment(new(1, 7), new(5, 1)));
 
 
 #endregion
 
 
 #region Positional pattern
+
 
 
 
