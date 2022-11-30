@@ -103,24 +103,46 @@ object person = new Person("Chuck", "Norris");
 //PropertyPattern.Extended(new Segment(new(1, 0), new(0, 1)));
 //PropertyPattern.Extended(new Segment(new(1, 7), new(5, 1)));
 
-
 #endregion
-
-
-#region Positional pattern
-
-
-
-
-#endregion
-
 
 #region Var pattern
 
+//VarPattern.TemporaryVariableIs(0);
+//VarPattern.TemporaryVariableIs(50);
 
+//VarPattern.TemporaryVariableSwitchUgly(new(1, 2));
+//VarPattern.TemporaryVariableSwitchUgly(new(2, 1));
+//VarPattern.TemporaryVariableSwitchUgly(new(5, 5));
+
+//VarPattern.TemporaryVariableSwitchWithCaseGuard(new(1, 2));
+//VarPattern.TemporaryVariableSwitchWithCaseGuard(new(2, 1));
+//VarPattern.TemporaryVariableSwitchWithCaseGuard(new(5, 5));
 
 #endregion
 
+#region Positional pattern
+
+//PositionalPattern.DeconstructSwitch(new(1,2));
+//PositionalPattern.DeconstructSwitch(new(0,1));
+
+//PositionalPattern.DeconstructSwitchCombined(new(0, 2));
+//PositionalPattern.DeconstructSwitchCombined(new(0, 2, 1));
+//PositionalPattern.DeconstructSwitchCombined(new(0, 0, 0));
+//PositionalPattern.DeconstructSwitchCombined(new(0, 0, -99));
+
+//PositionalPattern.DeconstructSwitchTyped(new Point2D(0, 1));
+//PositionalPattern.DeconstructSwitchTyped(new Point2D(7, 1));
+//PositionalPattern.DeconstructSwitchTyped(new Point3D(6, 5, 1));
+
+//PositionalPattern.DeconstructIsCombined();
+
+//PositionalPattern.PropertyPatternWithinPositionalPattern(new(7, 5));
+//PositionalPattern.PropertyPatternWithinPositionalPattern(new(0, -5));
+//PositionalPattern.PropertyPatternWithinPositionalPattern(new(0, -5){Weight = 7});
+//PositionalPattern.PropertyPatternWithinPositionalPattern(new(0, 5){Weight = -7});
+
+
+#endregion
 
 #region Discard pattern
 

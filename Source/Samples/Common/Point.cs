@@ -1,3 +1,14 @@
 ﻿namespace Samples.Common;
 
-public record Point(int X, int Y);
+public record Point
+{
+    public int X { get; }
+    public int Y { get; }
+    public int? Z { get; }
+
+    public Point(int x, int y) => (X, Y) = (x, y);
+    public Point(int x, int y, int z) => (X, Y, Z) = (x, y, z);
+
+    public void Deconstruct(out int x, out int y) => (x, y) = (X, Y);
+    public void Deconstruct(out int x, out int y, out int? z) => (x, y, z) = (X, Y, Z);
+}
