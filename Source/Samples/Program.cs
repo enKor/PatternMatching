@@ -144,7 +144,7 @@ object person = new Person("Chuck", "Norris");
 
 #endregion
 
-#region Discard pattern
+#region WholeSequenceWithDiscard pattern
 
 //DiscardPattern.SampleWithNullableEnum(DayOfWeek.Tuesday);
 //DiscardPattern.SampleWithNullableEnum(default);
@@ -154,6 +154,19 @@ object person = new Person("Chuck", "Norris");
 
 #region List pattern
 
+//ListPattern.Is();
+
+//ListPattern.WholeSequenceWithDiscard();
+
+//ListPattern.PartOfSequenceWithSlicePattern();
+
+//ListPattern.NestedSubPatternWithinSlicePattern("aBBA");
+//ListPattern.NestedSubPatternWithinSlicePattern("another");
+//ListPattern.NestedSubPatternWithinSlicePattern("Aneta");
+
+//ListPattern.NestedSubPatternWithinSlicePattern(new[] { -1, 0, 1 });
+//ListPattern.NestedSubPatternWithinSlicePattern(new[] { -1, 1, 2, 1 });
+//ListPattern.NestedSubPatternWithinSlicePattern(new[] { -1, 1, 2, 0, 4, 1 });
 
 
 #endregion
