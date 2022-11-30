@@ -1,6 +1,4 @@
-﻿using Samples.Common;
-
-namespace Samples.Patterns;
+﻿namespace Samples.Patterns;
 
 internal static class ParenthesizedPattern
 {

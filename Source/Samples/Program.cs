@@ -1,12 +1,6 @@
 ﻿using Samples.Common;
 using Samples.Patterns;
 
-#region pre-requisities
-
-object person = new Person("Chuck", "Norris");
-
-#endregion
-
 #region Type and Declaration patterns
 
 //TypePattern.IsType();
@@ -26,12 +20,12 @@ object person = new Person("Chuck", "Norris");
 //DeclarationPattern.Boxing();
 
 //TypePattern.SwitchStatement(42);
-//TypePattern.SwitchStatement(person);
+//TypePattern.SwitchStatement(new Person("Chuck", "Norris"));
 //TypePattern.SwitchStatement(3.14);
 //TypePattern.SwitchStatement("Hello");
 
 //TypePattern.SwitchExpression(42);
-//TypePattern.SwitchExpression(person);
+//TypePattern.SwitchExpression(new Person("Chuck", "Norris"));
 //TypePattern.SwitchExpression(3.14);
 //TypePattern.SwitchExpression("Hello");
 //TypePattern.SwitchExpression(new[] { 1, 2, 3 });
@@ -151,7 +145,6 @@ object person = new Person("Chuck", "Norris");
 
 #endregion
 
-
 #region List pattern
 
 //ListPattern.Is();
@@ -170,4 +163,3 @@ object person = new Person("Chuck", "Norris");
 
 
 #endregion
-

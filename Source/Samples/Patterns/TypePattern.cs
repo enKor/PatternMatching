@@ -55,22 +55,22 @@ internal static class TypePattern
         switch (obj)
         {
             case Person p:
-                Console.WriteLine("obj is a Person");
+                Console.Write("obj is a Person. ");
                 Console.WriteLine($"Name of the person: {p.FirstName} {p.LastName}");
                 break;
 
             case int i:
-                Console.WriteLine("obj is an int");
+                Console.Write("obj is an int. ");
                 Console.WriteLine($"Value of the int: {i}");
                 break;
 
             case double d:
-                Console.WriteLine("obj is a double");
+                Console.Write("obj is a double. ");
                 Console.WriteLine($"Value of the double: {d}");
                 break;
 
             default:
-                Console.WriteLine("obj is some other type");
+                Console.WriteLine("obj is some other type.");
                 break;
         }
     }
@@ -79,10 +79,10 @@ internal static class TypePattern
     {
         var message = obj switch
         {
-            Person p => $"Name of the person: {p.FirstName} {p.LastName}",
-            int i => $"Value of the int: {i}",
-            double d => $"Value of the double: {d}",
-            _ => "obj is some other type" // discard
+            Person p => $"obj is a Person. Name of the person: {p.FirstName} {p.LastName}",
+            int i => $"obj is a int. Value of the int: {i}",
+            double d => $"obj is a double. Value of the double: {d}",
+            _ => "obj is some other type." // discard
         };
 
         Console.WriteLine(message);
