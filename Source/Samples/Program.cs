@@ -146,7 +146,8 @@ object person = new Person("Chuck", "Norris");
 
 #region Discard pattern
 
-
+//DiscardPattern.SampleWithNullableEnum(DayOfWeek.Tuesday);
+//DiscardPattern.SampleWithNullableEnum(default);
 
 #endregion
 
